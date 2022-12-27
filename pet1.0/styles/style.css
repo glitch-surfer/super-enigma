@@ -1,3 +1,122 @@
-p {
-font-size: 16px;
+* {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-family: sans-serif;
+}
+.container {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/* HEADER */
+.header {
+    height: 154px;
+    padding-top: 30px;
+    margin-bottom: 70px;
+}
+
+.header-container-top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    height: 50%;
+}
+.header-container-bottom {
+    display: flex;
+    height: 50%;
+    align-items: center;
+}
+.logo {
+    margin-right: 40px;
+}
+.header-number {
+    margin-right: auto;
+}
+.nav-list {
+    display: flex;
+    margin-left: 45px;
+}
+.header-container-bottom-l {
+    margin-right: auto;
+}
+.header-btn {
+    margin-right: 45px;
+}
+.nav-item:not(:last-child) {
+    margin-right: 45px;
+}
+/* SPECOFFER */
+.section-title {
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+.specoffer {
+    display: flex;
+}
+.specoffer-left {
+    flex-direction: column;
+    flex: 0 1 550px;
+    margin-right: 24px;
+}
+.specoffer-left-up {
+    margin-bottom: 24px;
+}
+.section-special-offers {
+    padding-bottom: 70px;
+}
+/* ABOUT US */
+.description-text {
+    width: 900px;
+}
+.section-about-us {
+    padding-bottom: 70px;
+}
+/* service */
+.section-our-service {
+    padding-bottom: 70px;
+}
+.service-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.service-item {
+    flex: 1 1 40%;
+    
+}
+/* BENEFITS */
+.benefits-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.benefits-item {
+    flex: 1 1 22%;
+    
+}
+.benefits-item-text {
+    max-width: 190px;
+}
+.section-benefits {
+    padding-bottom: 70px;
+}
+/* BOOKING */
+.booking-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
 }

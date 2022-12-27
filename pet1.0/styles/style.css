@@ -66,14 +66,15 @@ html {
 }
 .specoffer {
     display: flex;
+    gap: 24px;
 }
 .specoffer-left {
     flex-direction: column;
     flex: 0 1 550px;
-    margin-right: 24px;
+    gap: 24px;
 }
-.specoffer-left-up {
-    margin-bottom: 24px;
+.specoffer-right {
+    flex: 0 1 550px;
 }
 .section-special-offers {
     padding-bottom: 70px;
@@ -119,4 +120,7 @@ html {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
+}
+.booking-item {
+    flex: 1 1 30%;
 }

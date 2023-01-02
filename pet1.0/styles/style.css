@@ -1,20 +1,66 @@
+@font-face {
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 300;
+    src: local(''),
+        url('../fonts/MullerLight.woff2') format('woff2'),
+        url('../fonts/MullerLight.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('../fonts/MullerRegular.woff2') format('woff2'),
+        url('../fonts/MullerRegular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+        url('../fonts/MullerBold.woff2') format('woff2'),
+        url('../fonts/MullerBold.woff') format('woff');
+}
+
 * {
     box-sizing: border-box;
 }
+
 a {
     text-decoration: none;
 }
+
 img {
     max-width: 100%;
 }
+
 ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
-html {
-    font-family: sans-serif;
+
+p {
+    margin: 0;
 }
+
+h4 {
+    margin: 0;
+}
+
+html {
+    font-family: 'Muller', sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+body {
+    background: #E5E5E5;
+}
+
 .container {
     max-width: 1200px;
     margin-right: auto;
@@ -22,6 +68,7 @@ html {
     padding-left: 15px;
     padding-right: 15px;
 }
+
 /* HEADER */
 .header {
     height: 154px;
@@ -35,88 +82,350 @@ html {
     margin-bottom: 30px;
     height: 50%;
 }
+
 .header-container-bottom {
     display: flex;
     height: 50%;
     align-items: center;
 }
+
 .logo {
     margin-right: 40px;
+    height: 54px;
+    width: 261px;
+    border-radius: 15px;
+
 }
+
 .header-number {
     margin-right: auto;
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    color: #666666;
 }
+
+.header-cabinet {
+    color: #CC9933;
+}
+
+.header-container-bottom {
+    width: 1170px;
+    height: 70px;
+    background: #FFFFFF;
+    border-radius: 15px;
+}
+
 .nav-list {
     display: flex;
     margin-left: 45px;
 }
+
 .header-container-bottom-l {
     margin-right: auto;
 }
+
+.btn {
+    padding: 13px 20px;
+    color: #CC9933;
+    border: 1px solid #CC9933;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
 .header-btn {
     margin-right: 45px;
 }
+
+.nav-link {
+    color: #666666;
+}
+
 .nav-item:not(:last-child) {
     margin-right: 45px;
 }
+
 /* SPECOFFER */
-.section-title {
-    margin-left: 40px;
-    margin-bottom: 20px;
-}
-.specoffer {
-    display: flex;
-}
-.specoffer-left {
-    flex-direction: column;
-    flex: 0 1 550px;
-    margin-right: 24px;
-}
-.specoffer-left-up {
-    margin-bottom: 24px;
-}
+
 .section-special-offers {
     padding-bottom: 70px;
 }
+
+.section-title {
+    margin-left: 40px;
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    color: #333333;
+}
+
+.specoffer {
+    display: flex;
+    gap: 24px;
+}
+
+.specoffer-left {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.specoffer-left-card {
+    padding: 40px 45px;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.left-card-upper {
+    background: url(/pet1.0/img/maldivskie.png) no-repeat center;
+}
+
+.left-card-lower {
+    background: url(/pet1.0/img/goriashiykrit.png) no-repeat center;
+}
+
+.specoffer-right-card {
+    flex: 1 1 50%;
+    padding: 212px 45px 40px;
+    background: url(/pet1.0/img/nomera\ luxe.png) no-repeat center;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.specoffer-title {
+    margin: 0 0 15px 0;
+    width: 420px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    color: #FFFFFF;
+}
+
+.offer-luxe {
+    width: 299px;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 60px;
+}
+
+.specoffer-price {
+    margin: 0 0 47px;
+    font-size: 20px;
+    line-height: 20px;
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+
+.specoffer-link {
+    color: #F0BF5F;
+}
+
+.link-arrow {
+    padding-right: 20px;
+    background: url('../img/link-arrow.svg') no-repeat right center transparent;
+    background-size: 18px 18px;
+}
+
+
 /* ABOUT US */
 .description-text {
-    width: 900px;
+    max-width: 888px;
+    line-height: 200%;
+    color: #000000;
 }
+
 .section-about-us {
     padding-bottom: 70px;
 }
+
 /* service */
 .section-our-service {
     padding-bottom: 70px;
 }
+
 .service-list {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
 }
+
 .service-item {
     flex: 1 1 40%;
-    
+    background: #FFFFFF no-repeat top center;
+    background-size: contain;
+    border-radius: 15px;
+    padding: 191px 126px 35px 45px;
 }
+
+.service-link {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 200%;
+    color: #CC9933;
+}
+
+.service-description {
+    line-height: 200%;
+    color: #000000;
+}
+
+.service-item-1 {
+    background-image: url(/pet1.0/img/10.jpg);
+}
+
+.service-item-2 {
+    background-image: url(/pet1.0/img/15.png);
+}
+
+.service-item-3 {
+    background-image: url(/pet1.0/img/12.png);
+}
+
+.service-item-4 {
+    background-image: url(/pet1.0/img/carlo-d-agnolo-aFxSh_l4fbY-unsplash.png);
+}
+
 /* BENEFITS */
 .benefits-list {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
 }
+
 .benefits-item {
     flex: 1 1 22%;
-    
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    padding: 40px 42px 32px 45px;
+
 }
+
 .benefits-item-text {
     max-width: 190px;
+    line-height: 200%;
+    color: #000000;
 }
+
+.benefits-icon {
+    background: no-repeat center left transparent;
+    background-size: contain;
+    margin-bottom: 10px;
+
+}
+
+.bath-icon {
+    background-image: url(/pet1.0/img/bathtub.svg);
+    width: 64px;
+    height: 66px;
+}
+
+.sushka-icon {
+    background-image: url(/pet1.0/img/sushka.svg);
+    width: 67px;
+    height: 66px;
+}
+
+.heating-icon {
+    background-image: url(/pet1.0/img/heating.svg);
+    width: 64px;
+    height: 66px;
+}
+
+.hotel-icon {
+    background-image: url(/pet1.0/img/hotel.svg);
+    width: 66px;
+    height: 66px;
+}
+
+.parking-icon {
+    background-image: url(/pet1.0/img/parking.svg);
+    width: 66px;
+    height: 66px;
+}
+
+.reception-icon {
+    background-image: url(/pet1.0/img/reception.svg);
+    width: 67px;
+    height: 66px;
+}
+
+.security-icon {
+    background-image: url(/pet1.0/img/security.svg);
+    width: 67px;
+    height: 66px;
+}
+
+.pool-icon {
+    background-image: url(/pet1.0/img/pool.svg);
+    width: 64px;
+    height: 66px;
+}
+
 .section-benefits {
     padding-bottom: 70px;
 }
+
 /* BOOKING */
 .booking-list {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
 }
+
+.booking-item {
+    flex: 1 1 30%;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+}
+
+.booking-item-offer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 32px 45px 45px;
+}
+
+.booking-offer {
+    display: flex;
+    gap: 52px;
+    align-items: center;
+}
+
+.stars-icon {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transform: translateY(-2px);
+}
+
+.booking-text-gray {
+    color: #999999;
+}
+
+.booking-price {
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.last-item {
+    padding: 373px 50px 27px;
+    background: url(/pet1.0/img/41.png) no-repeat center;
+    background-size: cover;
+}
+
+.booking-link {
+    padding-right: 20px;
+    background: url('../img/white-arrow.svg') no-repeat right center transparent;
+    background-size: 18px 18px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 200%;
+    color: #FFFFFF;

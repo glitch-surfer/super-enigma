@@ -58,7 +58,7 @@ html {
 }
 
 body {
-    background: #E5E5E5;
+    background: #E9E9E9;
 }
 
 .container {
@@ -154,6 +154,7 @@ body {
 }
 
 .section-title {
+    margin-top: 0;
     margin-left: 40px;
     margin-bottom: 20px;
     font-style: normal;
@@ -372,6 +373,10 @@ body {
 }
 
 /* BOOKING */
+.section-booking {
+    padding-bottom: 70px;
+}
+
 .booking-list {
     display: flex;
     flex-wrap: wrap;
@@ -406,7 +411,7 @@ body {
     transform: translateY(-2px);
 }
 
-.booking-text-gray {
+.text-gray {
     color: #999999;
 }
 
@@ -429,3 +434,191 @@ body {
     font-size: 20px;
     line-height: 200%;
     color: #FFFFFF;
+}
+
+/* WANT TOUR */
+.want-tour {
+    padding-bottom: 70px;
+}
+
+.tour-container {
+    width: 1170px;
+    background: #E5E5E5;
+    border-radius: 15px;
+}
+
+.want-tour-title {
+    padding-top: 45px;
+}
+
+.form-container {
+    padding: 0 45px 45px;
+}
+
+.want-tour-form {
+    display: flex;
+    padding: 32px 28px;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF;
+    border-radius: 15px;
+}
+
+.form-window-container {
+    display: flex;
+    gap: 41px;
+}
+
+.form-window {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tour-btn {
+    min-width: 100px;
+}
+
+.input {
+    border: none;
+}
+
+input[type=number] {
+    width: 120px;
+    border-bottom: 1px solid #E9E9E9;
+}
+
+label {
+    font-size: 12px;
+    line-height: 12px;
+}
+
+/* CONTACTS */
+.section-contacts {
+    padding-bottom: 40px;
+}
+
+.contacts-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 45px;
+    background: #FFFFFF;
+    border-radius: 15px;
+}
+
+.contacts-container-description {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts-item {
+    display: flex;
+    padding-bottom: 23px;
+    border-bottom: 1px solid #E9E9E9;
+    line-height: 150%;
+}
+
+.contacts-item:not(:nth-child(1)) {
+    padding-top: 25px;
+}
+
+.description-title {
+    width: 100px;
+    margin-right: 47px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.contacts-description {
+    width: 229px;
+}
+
+.contact-btn {
+    margin-top: 45px;
+    padding: 27px 30px;
+}
+
+.contacts-img {
+    width: 653px;
+    height: 528px;
+    border-radius: 10px;
+}
+
+.contact-link {
+    color: #CC9933;
+    line-height: 150%;
+}
+
+/* FOOTER */
+.footer {
+    height: 341px;
+    margin-bottom: 30px;
+}
+
+.footer-container {
+    display: flex;
+    height: 100%;
+    width: 1170px;
+    background: #333333;
+    border-radius: 15px;
+    padding-top: 45px;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+.footer-copirights {
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+    margin-right: 125px;
+    width: 302px;
+}
+
+.footer-text {
+    font-size: 16px;
+    font-style: normal;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.footer-contats-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-logo {
+    background: url(/pet1.0/img/footer-logo.svg) no-repeat center transparent;
+    background-size: contain;
+    width: 254px;
+    height: 228px;
+    align-self: flex-end;
+    position: relative;
+    right: 90px;
+}
+
+.footer-nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-nav-icon {
+    background: no-repeat center transparent;
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+}
+
+.trip-adviser-icon {
+    background-image: url(/pet1.0/img/tripadvisor-icon.svg);
+}
+
+.ok-icon {
+    background-image: url(/pet1.0/img/ok-icon.svg);
+}
+
+.vk-icon {
+    background-image: url(/pet1.0/img/vk-icon.svg);
+}

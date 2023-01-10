@@ -124,7 +124,7 @@ body {
     border: 1px solid var(--link-color, #CC9933);
     border-radius: 10px;
     background-color: transparent;
-    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, scale 0.2s ease-in-out;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, scale 0.3s ease-in-out;
 }
 
 .btn:hover {
@@ -140,7 +140,7 @@ body {
 
 .link-hover {
     position: relative;
-    transition: color 0.2s ease-in-out;
+    transition: color 0.3s ease-in-out;
 }
 
 .link-hover::after {
@@ -216,12 +216,13 @@ body {
     right: 0;
     background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%);
 }
+
 .specoffer__right-content {
     flex: 1 1 50%;
     padding: 212px 45px 40px;
     background: url(/pet1.0/img/nomera\ luxe.png) no-repeat center;
     background-size: cover;
-    border-radius: 15px; 
+    border-radius: 15px;
 }
 
 .specoffer__title {
@@ -233,6 +234,7 @@ body {
     line-height: 40px;
     color: var(--bg-color, #FFFFFF);
 }
+
 .specoffer__left-content .specoffer__title {
     filter: brightness(100%);
 }
@@ -459,6 +461,7 @@ body {
     background-size: cover;
     position: relative;
 }
+
 .booking__link {
     padding-right: 20px;
     background: url('../img/white-arrow.svg') no-repeat right center transparent;
@@ -647,7 +650,8 @@ label {
     gap: 20px;
 }
 
-.footer__nav-icon {
+/* вариант с декоративными иконками, без ховера */
+/* .footer__nav-icon {
     background: no-repeat center transparent;
     background-size: cover;
     width: 25px;
@@ -664,4 +668,12 @@ label {
 
 .vk-icon {
     background-image: url(/pet1.0/img/vk-icon.svg);
+} */
+
+.svg_hover path {
+    transition: fill 0.3s ease-in-out;
+}
+
+.svg_hover:hover path {
+    fill: var(--link-color, #CC9933);
 }

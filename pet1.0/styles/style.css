@@ -43,10 +43,10 @@ body {
 
 .container {
     max-width: 1200px;
-    margin-right: auto;
+    /* margin-right: auto;
     margin-left: auto;
     padding-left: 15px;
-    padding-right: 15px;
+    padding-right: 15px; */
 }
 
 /* HEADER */
@@ -57,10 +57,7 @@ body {
 }
 
 .header__container-top {
-    display: flex;
-    align-items: center;
     margin-bottom: 30px;
-    height: 50%;
 }
 
 .header__container-bottom {
@@ -82,12 +79,7 @@ body {
     border-radius: 15px;
 }
 
-.header__logo {
-    margin-right: 40px;
-}
-
 .header__number {
-    margin-right: auto;
     font-weight: 500;
     font-size: 20px;
     line-height: 20px;
@@ -180,18 +172,6 @@ body {
     color: #333333;
 }
 
-.specoffer {
-    display: flex;
-    gap: 24px;
-}
-
-.specoffer__left-content {
-    flex: 1 1 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-
 .specoffer__left-card {
     padding: 40px 45px;
     background-size: cover;
@@ -215,10 +195,11 @@ body {
     bottom: 0;
     right: 0;
     background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%);
+    border-radius: 15px;
 }
 
 .specoffer__right-content {
-    flex: 1 1 50%;
+    min-height: 540px;
     padding: 212px 45px 40px;
     background: url(/pet1.0/img/nomera\ luxe.png) no-repeat center;
     background-size: cover;
@@ -235,7 +216,7 @@ body {
     color: var(--bg-color, #FFFFFF);
 }
 
-.specoffer__left-content .specoffer__title {
+.specoffer__left-card .specoffer__title {
     filter: brightness(100%);
 }
 
@@ -271,7 +252,6 @@ body {
 }
 
 .about-us__text {
-    max-width: 888px;
     line-height: 200%;
     color: var(--text-color, #000000);
 }
@@ -281,14 +261,7 @@ body {
     padding-bottom: 70px;
 }
 
-.service__list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-}
-
 .service__item {
-    flex: 1 1 40%;
     background: var(--bg-color, #FFFFFF) no-repeat top center;
     background-size: contain;
     border-radius: 15px;
@@ -329,14 +302,7 @@ body {
     padding-bottom: 70px;
 }
 
-.benefits__list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-}
-
 .benefits__item {
-    flex: 1 1 22%;
     background-color: var(--bg-color, #FFFFFF);
     border-radius: 15px;
     padding: 40px 42px 32px 45px;
@@ -412,14 +378,14 @@ body {
     padding-bottom: 70px;
 }
 
-.booking__list {
+/* .booking__list {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
-}
+} */
 
 .booking__item {
-    flex: 1 1 30%;
+    /* flex: 1 1 30%; */
     display: flex;
     flex-direction: column;
     background-color: var(--bg-color, #FFFFFF);

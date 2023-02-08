@@ -7,43 +7,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hotel Lagoona</title>
   <link rel="stylesheet" href="/pet1.0/styles/normalize.css">
+  <link rel="stylesheet" href="/pet1.0/styles/bootstrap-grid.min.css">
   <link rel="stylesheet" href="/pet1.0/styles/style.css">
 </head>
 
 <body>
   <header class="header">
     <div class="container">
-      <div class="header__container-top">
-        <a class="logo header__logo" href="pet1.0/index.html"><img src="img/logo.svg" alt="Lagoona logo">
+      <div class="header__container-top row align-items-center g-5">
+        <a class="logo header__logo col-2" href="pet1.0/index.html"><img src="img/logo.svg" alt="Lagoona logo">
         </a>
-        <a class="header__number" href="tel:+74953225448">+7 495 322-54-48</a>
-        <a class="header__cabinet" href="cabinet">Личный кабинет</a>
+        <a class="header__number col-3" href="tel:+74953225448">+7 495 322-54-48</a>
+        <a class="header__cabinet col-2 ms-auto" href="cabinet">Личный кабинет</a>
       </div>
-      <div class="header__container-bottom">
-        <div class="header__container-bottom_left">
-          <nav class="nav">
-            <ul class="nav__list header__nav-list">
-              <li class="nav__item">
-                <a class="nav__link link-hover" href="">О нас</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link link-hover" href="">Услуги</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link link-hover" href="">Преимущества</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link link-hover" href="">Размещение</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link link-hover" href="">Блог</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link link-hover" href="">Контакты</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+      <div class="header__container-bottom ">
+        <nav class="header__container-bottom_left">
+          <ul class="nav__list header__nav-list">
+            <li class="nav__item">
+              <a class="nav__link link-hover " href="">О нас</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link-hover " href="">Услуги</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link-hover " href="">Преимущества</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link-hover " href="">Размещение</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link-hover " href="">Блог</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link-hover " href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
         <div class="header__container-bottom_right">
           <button class="btn header__btn">Хочу тур</button>
           <button class="btn header__btn">Обратный звонок</button>
@@ -55,23 +54,31 @@
     <section class="section-special-offers">
       <div class="container">
         <h2 class="section-title">Спецпредложения</h2>
-        <div class="specoffer">
-          <div class="specoffer__left-content">
-            <div class="specoffer__left-card specoffer_left-upper-card">
-              <h3 class="specoffer__title">Мальдивские острова</h3>
-              <p class="specoffer__price">от 55 000 ₽</p>
-              <a href="" class="specoffer__link link-hover link-arrow">Подробнее</a>
-            </div>
-            <div class="specoffer__left-card specoffer_left-lower-card">
-              <h3 class="specoffer__title">Горячий тур на остров Крит</h3>
-              <p class="specoffer__price">от 30 000 ₽</p>
-              <a href="" class="specoffer__link link-hover link-arrow">Подробнее</a>
+        <div class="row gx-4">
+          <div class="col-6">
+            <div class="row gy-4">
+              <div class="col-12">
+                <div class="specoffer__left-card specoffer_left-upper-card">
+                  <h3 class="specoffer__title">Мальдивские острова</h3>
+                  <p class="specoffer__price">от 55 000 ₽</p>
+                  <a href="" class="specoffer__link link-hover link-arrow">Подробнее</a>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="specoffer__left-card specoffer_left-lower-card">
+                  <h3 class="specoffer__title">Горячий тур на остров Крит</h3>
+                  <p class="specoffer__price">от 30 000 ₽</p>
+                  <a href="" class="specoffer__link link-hover link-arrow">Подробнее</a>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="specoffer__right-content">
-            <h3 class="specoffer__title specoffer_luxe">Номера категории люкс</h3>
-            <p class="specoffer__price">от 5 000 ₽</p>
-            <a href="" class="specoffer__link link-hover link-arrow">Подробнее</a>
+          <div class="col-6">
+            <div class="specoffer__right-content">
+              <h3 class="specoffer__title specoffer_luxe">Номера категории люкс</h3>
+              <p class="specoffer__price">от 5 000 ₽</p>
+              <a href="" class="specoffer__link link-hover link-arrow">Подробнее</a>
+            </div>
           </div>
         </div>
       </div>
@@ -79,42 +86,44 @@
     <section class="section-about-us">
       <div class="container">
         <h2 class="section-title">О нас</h2>
-        <p class="about-us__text">Идейные соображения высшего порядка, а также сложившаяся структура
-          организации влечёт за собой процесс внедрения и модернизации системы обучения кадров, соответствует
-          насущным потребностям. Идейные соображения высшего порядка, а также дальнейшее развитие различных
-          форм деятельности представляет собой интересный эксперимент проверки системы обучения кадров,
-          соответствует насущным потребностям. Равным образом сложившаяся структура организации требуют
-          определения и уточнения существенных финансовых
-          и административных условий.</p>
+        <div class="row">
+          <p class="about-us__text col-9">Идейные соображения высшего порядка, а также сложившаяся структура
+            организации влечёт за собой процесс внедрения и модернизации системы обучения кадров, соответствует
+            насущным потребностям. Идейные соображения высшего порядка, а также дальнейшее развитие различных
+            форм деятельности представляет собой интересный эксперимент проверки системы обучения кадров,
+            соответствует насущным потребностям. Равным образом сложившаяся структура организации требуют
+            определения и уточнения существенных финансовых
+            и административных условий.</p>
+        </div>
       </div>
     </section>
     <section class="section-our-service">
       <div class="container">
         <h2 class="section-title">Услуги</h2>
-        <ul class="service__list">
-          <li class="service__item service__item_service">
-            <a class="service__link link-hover link-arrow" href="">Эксклюзивное обслуживание</a>
+        <ul class="row g-4">
+          <li class="col-6">
+            <div class="service__item  service__item_service"><a class="service__link link-hover link-arrow" href="">Эксклюзивное обслуживание</a>
             <p class="service__description">
               Равным образом постоянный количественный рост и сфера нашей активности
-            </p>
+            </p></div>
           </li>
-          <li class="service__item service__item_rent">
-            <a class="service__link link-hover link-arrow" href="">Аренда банкетных залов</a>
+          <li class="col-6">
+            <div class="service__item  service__item_rent"><a class="service__link link-hover link-arrow" href="">Аренда банкетных залов</a>
             <p class="service__description">
               Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм
-            </p>
+            </p></div>
           </li>
-          <li class="service__item service__item_sauna">
-            <a class="service__link link-hover link-arrow" href="">Сауны, бассейны, бани, фитнес-залы</a>
+          <li class="col-6">
+            <div class="service__item  service__item_sauna"><a class="service__link link-hover link-arrow" href="">Сауны, бассейны, бани, фитнес-залы</a>
             <p class="service__description">
               Не следует, однако забывать, что начало повседневной работы по формированию позиции
-            </p>
+            </p></div>
           </li>
-          <li class="service__item service__item_security">
-            <a class="service__link link-hover link-arrow" href="">Охраняемые автомобильные стоянки</a>
+          <li class="col-6">
+            <div class="service__item  service__item_security"><a class="service__link link-hover link-arrow" href="">Охраняемые автомобильные стоянки</a>
             <p class="service__description">
               Не следует, однако забывать, что начало повседневной работы по формированию позиции
-            </p>
+            </p></div>
           </li>
         </ul>
       </div>
@@ -122,48 +131,62 @@
     <section class="section-benefits">
       <div class="container">
         <h2 class="section-title">Преимущества</h2>
-        <ul class="benefits__list">
-          <li class="benefits__item">
-            <div class="icon benefits__icon icon-bath"></div>
+        <ul class="benefits__list row g-4">
+          <li class=" col-3">
+            <div class="benefits__item">
+              <div class="icon benefits__icon icon-bath"></div>
             <p class="benefits__item-text">Идейные соображения высшего порядка,
               а также постоянный количественный рост</p>
+            </div>
           </li>
-          <li class="benefits__item">
-            <div class="icon benefits__icon icon-sushka"></div>
+          <li class="col-3">
+            <div class="benefits__item">
+              <div class="icon benefits__icon icon-sushka"></div>
             <p class="benefits__item-text">Значимость этих проблем настолько очевидна, что вопрос остаётся
               открытым</p>
+            </div>
           </li>
-          <li class="benefits__item">
-            <div class="icon benefits__icon icon-heating"></div>
+          <li class="col-3">
+            <div class="benefits__item">
+              <div class="icon benefits__icon icon-heating"></div>
             <p class="benefits__item-text">Таким образом реализация плановых заданий играет важную роль
               для понимания</p>
+            </div>
           </li>
-          <li class="benefits__item">
-            <div class="icon benefits__icon icon-hotel"></div>
+          <li class="col-3">
+            <div class="benefits__item">
+              <div class="icon benefits__icon icon-hotel"></div>
             <p class="benefits__item-text">Повседневная практика показывает, что сложившаяся структура
               организации</p>
+            </div>
           </li>
-          <li class="benefits__item">
-            <div class="icon benefits__icon icon-parking"></div>
+          <li class="col-3">
+            <div class="benefits__item">
+              <div class="icon benefits__icon icon-parking"></div>
             <p class="benefits__item-text">Равным образом рамки и место обучения кадров способствует
-              подготовки
-              сотрудника</p>
+              подготовки сотрудника</p>
+            </div>
           </li>
-          <li class="benefits__item">
-            <div class="icon benefits__icon icon-reception"></div>
+          <li class="col-3">
+            <div class="benefits__item">
+              <div class="icon benefits__icon icon-reception"></div>
             <p class="benefits__item-text">Консультация с активом влечёт за собой процесс внедрения услуг
               нашего сервиса</p>
+            </div>
           </li>
-          <li class="benefits__item">
-            <div class="icon benefits__icon icon-security"></div>
+          <li class="col-3">
+            <div class="benefits__item">
+              <div class="icon benefits__icon icon-security"></div>
             <p class="benefits__item-text">Повседневная практика показывает, что дальнейшее развитие
-              различных
-            </p>
+              различных</p>
+            </div>
           </li>
-          <li class="benefits__item">
-            <div class="icon benefits__icon icon-pool"></div>
+          <li class="col-3">
+            <div class="benefits__item">
+              <div class="icon benefits__icon icon-pool"></div>
             <p class="benefits__item-text">Значимость этого настолько очевидна, что консультация наших
               экспертов помогает</p>
+            </div>
           </li>
         </ul>
       </div>
@@ -171,9 +194,10 @@
     <section class="section-booking">
       <div class="container">
         <h2 class="section-title">Размещение</h2>
-        <ul class="booking__list">
-          <li class="booking__item">
-            <div class="booking__img"><img src="img/23.png" alt="Lagoona española"></div>
+        <ul class="booking__list row g-4">
+          <li class="col-4">
+            <div class="booking__item">
+              <div class="booking__img"><img src="img/23.png" alt="Lagoona española"></div>
             <div class="booking__card">
               <div class="booking__offer offer">
                 <span><span class="text-gray">от </span><strong class="offer__price">4 698
@@ -190,9 +214,11 @@
               <p class="text-gray">Барселона, Испания</p>
               <div><button class="btn">Номера</button></div>
             </div>
+            </div>
           </li>
-          <li class="booking__item">
-            <div class="booking__img"><img src="img/24.png" alt="Lagoona son típicas"></div>
+          <li class="col-4">
+            <div class="booking__item">
+              <div class="booking__img"><img src="img/24.png" alt="Lagoona son típicas"></div>
             <div class="booking__card">
               <div class="booking__offer offer">
                 <span><span class="text-gray">от </span><strong class="offer__price">5
@@ -209,9 +235,11 @@
               <p class="text-gray">Барселона, Испания</p>
               <div><button class="btn">Номера</button></div>
             </div>
+            </div>
           </li>
-          <li class="booking__item">
-            <div class="booking__img"><img src="img/26.png" alt="Lagoona de la guerra"></div>
+          <li class="col-4">
+            <div class="booking__item">
+              <div class="booking__img"><img src="img/26.png" alt="Lagoona de la guerra"></div>
             <div class="booking__card">
               <div class="booking__offer offer">
                 <span><span class="text-gray">от </span><strong class="offer__price">6
@@ -228,9 +256,11 @@
               <p class="text-gray">Барселона, Испания</p>
               <div><button class="btn">Номера</button></div>
             </div>
+            </div>
           </li>
-          <li class="booking__item">
-            <div class="booking__img"><img src="img/29-1.png" alt="Lagoona mentira piadosa"></div>
+          <li class="col-4">
+            <div class="booking__item">
+              <div class="booking__img"><img src="img/29-1.png" alt="Lagoona mentira piadosa"></div>
             <div class="booking__card">
               <div class="booking__offer offer">
                 <span><span class="text-gray">от </span><strong class="offer__price">6
@@ -247,9 +277,11 @@
               <p class="text-gray">Барселона, Испания</p>
               <div><button class="btn">Номера</button></div>
             </div>
+            </div>
           </li>
-          <li class="booking__item">
-            <div class="booking__img"><img src="img/30.png" alt="Lagoona empujar la creatividad"></div>
+          <li class="col-4">
+            <div class="booking__item">
+              <div class="booking__img"><img src="img/30.png" alt="Lagoona empujar la creatividad"></div>
             <div class="booking__card">
               <div class="booking__offer offer">
                 <span><span class="text-gray">от </span><strong class="offer__price">6
@@ -266,9 +298,11 @@
               <p class="text-gray">Барселона, Испания</p>
               <div><button class="btn">Номера</button></div>
             </div>
+            </div>
           </li>
-          <li class="booking__item">
-            <div class="booking__img"><img src="img/31.png" alt="Lagoona el retorno"></div>
+          <li class="col-4">
+            <div class="booking__item">
+              <div class="booking__img"><img src="img/31.png" alt="Lagoona el retorno"></div>
             <div class="booking__card">
               <div class="booking__offer offer">
                 <span><span class="text-gray">от </span><strong class="offer__price">6
@@ -285,9 +319,11 @@
               <p class="text-gray">Барселона, Испания</p>
               <div><button class="btn">Номера</button></div>
             </div>
+            </div>
           </li>
-          <li class="booking__item">
-            <div class="booking__img"><img src="img/27.png" alt="Lagoona mentira piadosa"></div>
+          <li class="col-4">
+            <div class="booking__item">
+              <div class="booking__img"><img src="img/27.png" alt="Lagoona mentira piadosa"></div>
             <div class="booking__card">
               <div class="booking__offer offer">
                 <span><span class="text-gray">от </span><strong class="offer__price">6
@@ -304,9 +340,11 @@
               <p class="text-gray">Барселона, Испания</p>
               <div><button class="btn">Номера</button></div>
             </div>
+            </div>
           </li>
-          <li class="booking__item">
-            <div class="booking__img"><img src="img/29.png" alt="Lagoona suerte siguió siempre"></div>
+          <li class="col-4">
+            <div class="booking__item">
+              <div class="booking__img"><img src="img/29.png" alt="Lagoona suerte siguió siempre"></div>
             <div class="booking__card">
               <div class="booking__offer offer">
                 <span><span class="text-gray">от </span><strong class="offer__price">6
@@ -323,9 +361,12 @@
               <p class="text-gray">Барселона, Испания</p>
               <div><button class="btn">Номера</button></div>
             </div>
+            </div>
           </li>
-          <li class="booking__item">
-            <div class="booking__last-item"><a class="booking__link" href="">Посмотреть все варианты</a></div>
+          <li class="col-4">
+            <div class="booking__item">
+              <div class="booking__last-item"><a class="booking__link" href="">Посмотреть все варианты</a></div>
+            </div>
           </li>
         </ul>
       </div>
